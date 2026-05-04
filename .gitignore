@@ -1,0 +1,35 @@
+# --- Linux System Files ---
+.DS_Store
+.directory
+Thumbs.db
+*.swp
+*~
+
+# --- VS Code Files ---
+.vscode/
+*.code-workspace
+
+# --- Bash/Scripting Specifics ---
+# Ignore temporary files created by scripts
+*.tmp
+*.log
+*.out
+
+# Ignore sensitive data (If you ever use .env files for passwords)
+.env
+secret.txt
+credentials.json
+
+# --- Compiled/Binary Files ---
+# If you ever experiment with C or Go alongside Bash
+*.o
+*.exe
+*.bin
+
+my_venv/
+venv/
+Python-3.14.3/
+*.tar.xz
+__pycache__
+cpython-314
+*.py[cod]

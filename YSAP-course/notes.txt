@@ -1,1 +1,3 @@
 Initial course files
+
+Fix all your bash notes after you're done with the course. They're in all over the computer notes in Notion.

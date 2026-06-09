@@ -1,0 +1,69 @@
+# for real bash notes
+
+Use “” over ‘’
+
+You can press up and down arrow keys as history of commands
+
+whoami (to show the user)
+
+which $SHELL (to find out if you’re running Bash)
+
+mkdir (make directory, creates a new folder)
+
+rmdir (remove directory, deletes a folder)
+
+rm “file name” (remove, can be more powerful with * if it has numbers)
+
+rm (never use this, it removes files and doesn’t put it in a bin)
+
+mv “file name” “file name you want to change it to” (move, renames files, never use this because if a file already has the name it’ll be rewritten)
+
+-i (interactive, y or n)
+
+alias
+
+history (prints your commands)
+
+. (put it at the beginning to hide your files)
+
+ls -a (to see hidden files)
+
+cd . (your current directory)
+
+cd .. (goes above your current directory)
+
+cd - (to go back to the previous directory)
+
+chmod (change mode, used to change file system access permissions)
+
+cd (change directory, changes the folder you’re on)
+
+cat (to see things inside a file)
+
+grep (to find stuff) -A1 (one line after the thing you want to find) -B1 (one line before the thing, you can change the numbers on how much before or after you want) -C1 (context, so one before and after) -i (for case sensitivity) -o ‘^’ (for exact matches, you can also combine those commands in multiple ways)
+
+sudo apt update (updates software)
+
+ —version (version of the software)
+
+ls (list, shows everything in the folder)
+
+pwd (print working directory, shows where you are)
+
+clear (ctrl + L, wipes the terminal screen)
+
+r (read)
+
+w (write)
+
+x (execute)
+
+touch “file name” (to make a file)
+
+echo “text” > “file name” (to overwrite a file) >> to add to a file
+
+“less” and “more” (pager, J, K, N, and shift+N are for up and down too, you can press slash and then what you want to search for to search, can be piped with cat and grep)
+
+q (quit)
+
+man (manual, can be combined with other commands) man “less” or “more”

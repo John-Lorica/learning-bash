@@ -66,4 +66,12 @@ echo “text” > “file name” (to overwrite a file) >> to add to a file
 
 q (quit)
 
-man (manual, can be combined with other commands) man “less” or “more”
+man (manual, can be combined with other commands) man “less” or “more”, man “number” “printf”
+
+help
+
+which
+
+type
+
+compgen -b

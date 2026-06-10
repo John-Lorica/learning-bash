@@ -75,3 +75,7 @@ which
 type
 
 compgen -b
+
+file (tells you what type of file the file is)
+
+tr (translate, “variable you want to change it to” “variable you want to change”)

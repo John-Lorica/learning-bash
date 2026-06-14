@@ -79,3 +79,7 @@ compgen -b
 file (tells you what type of file the file is)
 
 tr (translate, “variable you want to change it to” “variable you want to change”)
+
+unset (removes the variable that will be printed)
+
+uname (prints the name of the system, can add “-a” for literally everything)

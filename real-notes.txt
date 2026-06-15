@@ -1,4 +1,6 @@
 # for real bash notes
+# YSAP is using Vim, so I'm gonna study that for a bit
+
 
 Use “” over ‘’
 

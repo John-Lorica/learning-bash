@@ -1,0 +1,3 @@
+hello Uzbek (from func)
+hello John (from func)
+hello Tam (from func)

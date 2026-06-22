@@ -2,8 +2,6 @@
 # YSAP is using Vim, so I'm gonna study that for a bit
 
 
-Use “” over ‘’
-
 You can press up and down arrow keys as history of commands
 
 whoami (to show the user)

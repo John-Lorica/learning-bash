@@ -1,14 +1,11 @@
 #!/usr/bin/env bash
 
-first_array=(
+array=(
 	foo
 	bar
 	baz
+	'hello world'
 )
 
-second_array=("${first_array[@]}")
-second_array+=(buddy guy joe)
-
-for item in "${second_array[@]}"; do
-	echo "item is: $item"
-done
+IFS=,
+echo "array is: ${!array[*]}"

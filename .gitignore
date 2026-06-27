@@ -25,6 +25,7 @@ credentials.json
 *.o
 *.exe
 *.bin
+*.swp
 
 my_venv/
 venv/

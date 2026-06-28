@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
 
-set -e
-
-a=2
-b=3
-
-((max = a > b ? a : b))
-
-echo "max = $max"
+a=08
+echo "$a"
+echo $(( 10#$a ))

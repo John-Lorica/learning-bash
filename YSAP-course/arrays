@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+proces-indexed() {
+	local arguments=("$@")
+	echo "found: ${#arguments[@]} arguments"
+
+	local IFS=,
+	echo "${arguments[*]}"
+}
+
+process-associative() {
+	local arguments=("$@")
+	echo "found: ${#arguments[@]} total arguments"
+
+	declade -A unique
+	local item
+	for item in "${arguments[@]}"; do
+		unique[$item]=1
+	done
+
+	echo "found: ${#unique[@]} unique arguments"
+}
+
+process-commands() {
+	local arguments=("$@")
+	echo "found: ${#arguments[@]} total arguments"
+
+	local item
+	for item; do
+}

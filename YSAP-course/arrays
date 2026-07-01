@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-proces-indexed() {
+process-indexed() {
 	local arguments=("$@")
 	echo "found: ${#arguments[@]} arguments"
 
@@ -12,7 +12,7 @@ process-associative() {
 	local arguments=("$@")
 	echo "found: ${#arguments[@]} total arguments"
 
-	declade -A unique
+	declare -A unique
 	local item
 	for item in "${arguments[@]}"; do
 		unique[$item]=1
@@ -27,4 +27,26 @@ process-commands() {
 
 	local item
 	for item; do
+		echo "running command: $item"
+		"$item" # hmmm
+	done
 }
+
+cmd=$1
+shift
+
+case "$cmd" in
+	indexed)
+		process-indexed "$@"
+		;;
+	associative)
+		process-associative "$@"
+		;;
+	commands)
+		process-commands "$@"
+		;;
+	*)
+		echo "unknown cmd: $cmd" >&2
+		exit 1
+		;;
+esac

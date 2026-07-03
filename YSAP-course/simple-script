@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 first_name='john'
-last_name='eddy'
+last_name='lorica'
 
 full_name="$first_name $last_name"
 
-if [[$first_name == 'john' ]]; then
+if [[ $first_name == 'john' ]]; then
 	echo "oh hey it's john"
 fi
 

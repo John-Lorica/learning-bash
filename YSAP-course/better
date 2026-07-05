@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+declare -A shells
+while IFS=; read -r name pass uid gid gecos home shell; do
+	# skip comments
+	if [[ $name == '#'* ]]; then
+		continue
+	fi
+
+	shells[$name]=$shell
+done < /etc/passwd
+
+echo "angeli has the shell: ${shells[angeli]}"

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+. ./lib/greetings || exit 1
+
+name='buddy'
+greet dave
+echo "after greeting dave: $name"

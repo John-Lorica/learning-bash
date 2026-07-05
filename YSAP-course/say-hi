@@ -1,13 +1,17 @@
 #!/usr/bin/env bash
 
 greet() {
-	echo "hello $1"
+	name=$1
+	echo "hello $name"
 }
 
 goodbye() {
-	echo "goodbye $1"
+	name=$1
+	echo "goodbye $name"
 }
 
-greet dave
-greet john
-goodbye buddy
+if ! (return 2>/dev/null); then
+	# we are being called directly
+	greet dave
+	goodbye john
+fi

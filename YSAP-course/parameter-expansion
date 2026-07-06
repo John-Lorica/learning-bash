@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+name=${1?'You must supply a name'}
+
+echo "hello $name!"
+
+echo 'done'

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
++(thing) => /(thing)+/
+?(thing) => /(thing)?/
+*(thing) => /(thing)*/
+
